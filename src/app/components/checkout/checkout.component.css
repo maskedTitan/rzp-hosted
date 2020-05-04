@@ -1,0 +1,30 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  margin-bottom: 3px;
+  margin-right: 1.5px;
+}
+
+.custom-input {
+  background: linear-gradient(120deg, #77d8d8, #0779e4);
+  color: white;
+}
+
+.submit-btn {
+  color: black;
+  background: lightblue;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: auto;
+}
+
+.submit-btn:hover {
+  background: darkblue;
+  color: white;
+}

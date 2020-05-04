@@ -1,0 +1,96 @@
+<h1>Razorpay Hosted Checkout</h1>
+
+<form
+  class="form-input"
+  method="POST"
+  action="https://api.razorpay.com/v1/checkout/embedded"
+>
+  <div class="form-group">
+    <label for="enterApiKey">Razorpay API Key</label>
+    <input
+      type="text"
+      class="form-control custom-input"
+      id="enterApiKey"
+      name="key_id"
+      placeholder="Enter API Key"
+    />
+  </div>
+  <div class="form-group">
+    <label for="enterOrderID"
+      >Razorpay Order ID. Learn how to create Razorpay orders
+      <a
+        class="btn btn-link"
+        href="https://razorpay.com/docs/payment-gateway/orders/"
+        role="button"
+        >Here</a
+      ></label
+    >
+    <input
+      type="text"
+      class="form-control custom-input"
+      id="enterOrderID"
+      name="order_id"
+      placeholder="Enter the razorpay order id"
+    />
+  </div>
+
+  <input type="hidden" name="name" value="Acme Corp" />
+  <input type="hidden" name="description" value="A Wild Sheep Chase" />
+  <input
+    type="hidden"
+    name="image"
+    value="https://cdn.razorpay.com/logos/BUVwvgaqVByGp2_large.png"
+  />
+  <div class="form-group">
+    <label for="enterName">Name of the Customer</label>
+    <input
+      type="text"
+      class="form-control custom-input"
+      name="prefill[name]"
+      id="enterName"
+      placeholder="Name"
+    />
+  </div>
+  <div class="form-group">
+    <label for="enterContact">Contact of the Customer</label>
+    <input
+      type="text"
+      class="form-control custom-input"
+      name="prefill[contact]"
+      id="enterContact"
+      placeholder="Contact"
+    />
+  </div>
+  <div class="form-group">
+    <label for="enterEmail">Email of the Customer</label>
+    <input
+      type="text"
+      class="form-control custom-input"
+      name="prefill[email]"
+      id="enterEmail"
+      placeholder="Email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="enterAddress">Address of the Customer</label>
+    <input
+      type="text"
+      class="form-control custom-input"
+      name="notes[shipping address]"
+      id="enterAddress"
+      placeholder="Address"
+    />
+  </div>
+  <input
+    type="hidden"
+    name="callback_url"
+    value="https://enbt7yy8hfkfp.x.pipedream.net/"
+  />
+  <input
+    type="hidden"
+    name="cancel_url"
+    value="https://enbt7yy8hfkfp.x.pipedream.net/"
+  />
+
+  <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+</form>
