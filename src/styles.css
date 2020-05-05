@@ -1,6 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background-image: linear-gradient(120deg, #77d8d8, #0779e4);
-  color: whitesmoke;
-  min-height: 100vh;
+	background-image: linear-gradient(120deg, #77d8d8, #0779e4);
+	color: whitesmoke;
+	min-height: 100vh;
+}
+
+/* Scrollbar  */
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #77d8d8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #0779e4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: darkblue;
 }
